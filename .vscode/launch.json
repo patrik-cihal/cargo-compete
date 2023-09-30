@@ -1,0 +1,144 @@
+{
+      // Use IntelliSense to learn about possible attributes.
+      // Hover to view descriptions of existing attributes.
+      // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+      "version": "0.2.0",
+      "configurations": [
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug unit tests in library 'cargo-compete'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--lib",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "cargo-compete",
+                              "kind": "lib"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug executable 'cargo-compete'",
+                  "cargo": {
+                        "args": [
+                              "build",
+                              "--bin=cargo-compete",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "cargo-compete",
+                              "kind": "bin"
+                        }
+                  },
+                  "args": [
+                        "compete",
+                        "new",
+                        "1875"
+                  ],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug unit tests in executable 'cargo-compete'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--bin=cargo-compete",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "cargo-compete",
+                              "kind": "bin"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug integration test 'init'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--test=init",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "init",
+                              "kind": "test"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug integration test 'login'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--test=login",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "login",
+                              "kind": "test"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug integration test 'new'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--test=new",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "new",
+                              "kind": "test"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            },
+            {
+                  "type": "lldb",
+                  "request": "launch",
+                  "name": "Debug integration test 'test'",
+                  "cargo": {
+                        "args": [
+                              "test",
+                              "--no-run",
+                              "--test=test",
+                              "--package=cargo-compete"
+                        ],
+                        "filter": {
+                              "name": "test",
+                              "kind": "test"
+                        }
+                  },
+                  "args": [],
+                  "cwd": "${workspaceFolder}"
+            }
+      ]
+}
