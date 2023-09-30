@@ -588,8 +588,15 @@ impl Html {
             .with_context(|| "Could not find `.sample-test`")?;
 
         let ins = sample_test
-            .select(static_selector!("div.input > pre > div"))
-            .map(|p| p.fold_text_and_br())
+            .select(static_selector!("div.input > pre"))
+            .map(|p| {
+                let mut res = p.fold_text_and_br();
+                if res.len() == 0 {
+                    let data = p.select(static_selector!("div")).map(|p| p.fold_text_and_br()).collect::<Vec<_>>();
+                    res = data.join("\n");
+                }
+                res
+            })
             .collect::<Vec<_>>();
 
         let outs = sample_test
