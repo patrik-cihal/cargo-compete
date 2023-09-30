@@ -1,0 +1,208 @@
+---
+source: snowchains_core/tests/codeforces-retrieve-test-cases.rs
+assertion_line: 104
+expression: messages
+
+---
+[
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/enter",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        POST,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/enter",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        302,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/api/contest.list",
+            query: Some(
+                "gym=false",
+            ),
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340/problem/A",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340/problem/B",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340/problem/C",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340/problem/D",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "codeforces.com",
+                ),
+            ),
+            port: None,
+            path: "/contest/340/problem/E",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+]

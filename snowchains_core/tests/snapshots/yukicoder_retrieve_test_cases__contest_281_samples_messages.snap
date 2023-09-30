@@ -1,0 +1,294 @@
+---
+source: snowchains_core/tests/yukicoder-retrieve-test-cases.rs
+assertion_line: 95
+expression: messages
+
+---
+[
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/contest/id/281",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/3976",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1229",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/4945",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1230",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/2651",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1231",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/3014",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1232",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/3265",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1233",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/api/v1/problems/1379",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "yukicoder.me",
+                ),
+            ),
+            port: None,
+            path: "/problems/no/1234",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+]

@@ -1,0 +1,55 @@
+---
+source: snowchains_core/tests/atcoder-retrieve-test-cases.rs
+assertion_line: 143
+expression: messages
+
+---
+[
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "atcoder.jp",
+                ),
+            ),
+            port: None,
+            path: "/contests/arc021/tasks",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    OnRequest(
+        GET,
+        Url {
+            scheme: "https",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "atcoder.jp",
+                ),
+            ),
+            port: None,
+            path: "/contests/arc021/tasks_print",
+            query: None,
+            fragment: None,
+        },
+    ),
+    OnResponse(
+        200,
+        Ok,
+    ),
+    Warn(
+        "D: Could not extract the sample cases",
+    ),
+]
